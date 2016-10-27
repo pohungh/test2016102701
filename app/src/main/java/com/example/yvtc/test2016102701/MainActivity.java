@@ -22,4 +22,24 @@ public class MainActivity extends AppCompatActivity {
     {
         pb.setVisibility(View.INVISIBLE);
     }
+    public void click1(View v)
+    {
+        pb.setVisibility(View.VISIBLE);
+        new Thread(){
+            public void run(){
+                super.run();
+                try{
+                    Thread.sleep(3000);
+                }catch(InterruptedException e){
+                    e.printStackTrace();
+                }
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        pb.setVisibility(View.INVISIBLE);
+                    }
+                });
+            }
+        }.start();
+    }
 }
