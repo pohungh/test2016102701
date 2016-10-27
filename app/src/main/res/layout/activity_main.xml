@@ -90,7 +90,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/button5"
         android:layout_below="@+id/textView3"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="click3" />
 
     <TextView
         android:text="TextView"

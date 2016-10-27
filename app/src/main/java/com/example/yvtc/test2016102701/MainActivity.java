@@ -72,5 +72,10 @@ public class MainActivity extends AppCompatActivity {
     {
         pb2.setProgress(pb2.getProgress()+10);
     }
+    public void click3(View v)
+    {
+        String str = String.valueOf(sb.getProgress());
+        tv2.setText(str);
+    }
 
 }
